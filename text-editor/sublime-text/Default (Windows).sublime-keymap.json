@@ -1,0 +1,20 @@
+[
+  { "keys": ["tab"], "command": "expand_abbreviation_by_tab", "context":
+    [
+        { "operand": "source.js", "operator": "equal", "match_all": true, "key": "selector" },
+        { "match_all": true, "key": "selection_empty" },
+        { "operator": "equal", "operand": false, "match_all": true, "key": "has_next_field" },
+        { "operand": false, "operator": "equal", "match_all": true, "key": "auto_complete_visible" },
+        { "match_all": true, "key": "is_abbreviation" }
+    ]
+  },
+  { "keys": ["ctrl+shift+s"], "command": "save_all" },
+  { "keys": ["ctrl+shift+i"], "command": "reindent", "args": {"single_line": true}},
+  { "keys": ["ctrl+v"], "command": "paste_and_indent" },
+  { "keys": ["ctrl+shift+v"], "command": "paste" },
+  { "keys": ["ctrl+shift+v"], "command": "paste" },
+  { "keys": ["alt+j"], "command": "move {\"by\": \"characters\", \"forward\": true}" },
+  { "keys": ["alt+k"], "command": "move {\"by\": \"lines\", \"forward\": true}" },
+  { "keys": ["alt+l"], "command": "move {\"by\": \"characters\", \"forward\": true}" },
+  { "keys": ["alt+i"], "command": "move {\"by\": \"lines\", \"forward\": false}" }
+]
